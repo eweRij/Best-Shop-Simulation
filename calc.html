@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BestShopSimulation</title>
+        <link rel="stylesheet" href="css/calc.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@300;400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wraper">
+        <header class = "header__logo">
+            <h1>Calculate how much you'll pay</h1>
+        </header>
+        <main class="content inputs__container">
+            <div class="main__inputs">
+                <input type="number" class="main__inputs__quality blue" placeholder="Products quantity">
+                <input type="number" class="main__inputs__products-amount blue" placeholder="Estimated orders in month">
+                <div class = "main__dropdown blue">
+                    <span>Choose package</span>
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22"><defs><style>.a,.c{fill:none;}.b{clip-path:url(#a);}.c{stroke:#08a6e4;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style><clipPath id="a"><rect class="a" width="22" height="22"/></clipPath></defs><g class="b"><circle class="c" cx="10" cy="10" r="10" transform="translate(1 1)"/><path class="c" d="M8,12l4,4,4-4" transform="translate(-1 -1)"/><line class="c" y2="8" transform="translate(11 7)"/></g></svg>
+                </div>
+                <ul class="main__dropdown-list invisible">
+                    <li data-price="20">Basic</li>
+                    <li data-price="35">Proffesional</li>
+                    <li data-price="55">Premium</li>
+                </ul>
+                <div class="accounting__input__container">
+                    <input type="checkbox" class="accounting-check">
+                    <label>Accounting</label>
+                </div>
+                
+                <div class="rental__input__container">
+                    <input type= "checkbox" class="rental-check">
+                    <label>Rental of a payment terminal</label>
+                </div>
+                 
+            </div>
+            <div class="main__products__container">
+                <ul class="main__products__list">
+                    <li class = "invisible"><p>Products</p><p><span class="products__calc"></span>* $0.5</p><span class="products__sum"></span></li>
+                    <li class = "invisible"><p>Orders</p><p><span class="orders__calc"></span>* $0.25</p><span class="orders__sum"></span></li>
+                    <li class = "invisible"><p>Package</p><p><span class="package__calc"></span></p><span class="package__sum"></span></li>
+                    <li class = "invisible"><p>Accounting</p><span class="accounting__sum"></span></li>
+                    <li class = "invisible"><p>Terminal</p><span class="terminal__sum"></span></li>
+                    
+                </ul>
+            </div>
+        </main>
+        <footer class="main__products-list__total">Total: <span></span></footer>
+        <script src="js/calc.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F7F7F7;
+}
+.wraper {
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.content {
+    min-width: 600px;
+    margin:0 auto;
+}
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.main__dropdown-list, .main__products__list {
+    list-style: none;
+}
+.header__logo h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    margin-bottom: 10vh;
+}
+
+.inputs__container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+}
+/*kontener z inputami*/
+.main__inputs {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*stylowanie inputów*/
+.blue {
+    width: 100%;
+    border: 1px solid #08A6E4;
+    box-shadow: 0px 3px 6px #08A6E429;
+    border-radius: 6px;
+    text-align: left;
+    font-weight: 400;
+    font-size:13px;
+    font-family: "Open Sans";
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+.accounting__input__container {
+    margin-top: 20px;
+}
+.accounting__input__container, .rental__input__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size:13px;
+    font-family: "Open Sans";
+    outline: none;
+}
+.accounting-check, .rental-check {
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    margin-right: 10px;
+    height: 24px;
+    width:24px;
+    appearance: none;
+    outline: none;
+    position: relative;
+}
+input[type="checkbox"]:checked:after{
+    content: "";
+    background: url(../assets/Checkmark.svg) no-repeat center/contain;
+    width:  14px;
+    height: 14px;
+    left:5px;
+    bottom: 5px;
+    position: absolute;
+}
+/*stylowanie dropdowna*/
+.main__dropdown {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__dropdown-list {
+    position: absolute;
+    bottom: 85px;
+    width: 30vw;
+    box-shadow: 0px 3px 6px #EB476E29;
+    border: 1px solid #EB476E;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 13px;
+    z-index: 1;
+    background-color: white;
+}
+.main__dropdown-list li {
+    width: 100%;
+    padding: 10px;
+}
+.main__dropdown-list li:hover {
+    background-color: #00000029;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/*stylowanie kalkulatora*/
+.main__products__container {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 40vh;
+}
+.main__products__container ul {
+    width: 100%;
+    padding-left :20px;
+}
+.main__products__list li {
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #55DFB4;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.terminal__sum, .accounting__sum, .package__sum, .orders__sum, .products__sum {
+    font-weight: 700;
+}
+/*stylowanie totala*/
+.main__products-list__total {
+    align-self: flex-end;
+    background-color: #08A6E4;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    min-width: 15vw;
+    padding: 10px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin-right: 20vw;
+}
+.main__products-list__total span {
+    font-weight: 700;
+}
+
+
